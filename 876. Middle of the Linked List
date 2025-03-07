@@ -1,0 +1,13 @@
+class Solution {
+    public ListNode middleNode(ListNode head) {
+        List <ListNode> l1=new ArrayList<>();
+        int count=0;
+        ListNode p=head;
+        ListNode q=head;
+        while(p!=null && p.next!=null){
+            p=p.next.next;
+            q=q.next;
+        }
+        return q;
+    }
+}
